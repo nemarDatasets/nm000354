@@ -1,21 +1,21 @@
-participant_id	age	sex	handedness
-sub-P1	44	M	R
-sub-P10	30	M	L
-sub-P11	36	F	R
-sub-P12	36	M	R
-sub-P13	23	M	L
-sub-P14	42	F	R
-sub-P15	24	F	R
-sub-P16	23	F	R
-sub-P17	51	M	R
-sub-P18	47	M	R
-sub-P19	18	M	R
-sub-P2	36	M	R
-sub-P20	36	M	R
-sub-P3	38	F	R
-sub-P4	28	F	R
-sub-P5	63	M	R
-sub-P6	24	F	L
-sub-P7	49	M	R
-sub-P8	30	F	L
-sub-P9	46	M	R
+participant_id	age	sex	handedness	implantation_site	n_electrodes	n_contacts	epilepsy_duration	cognitive_profile	education	task_success_rate
+sub-P1	44	M	R	L frontal precentral	6	66	36	average	secondary	88
+sub-P10	30	M	L	R operculo-insular	15	189	28	below average	secondary	47
+sub-P11	36	F	R	L temporo-parieto-occipital	18	190	7	average	tertiary	88
+sub-P12	36	M	R	L temporo-insular	13	163	9	below-average	secondary	86
+sub-P13	23	M	L	L fronto-temporal	17	190	7	average	secondary	69
+sub-P14	42	F	R	R temporal	13	141	30	average	secondary	94
+sub-P15	24	F	R	L temporo-insular	13	159	1	above average	tertiary	90
+sub-P16	23	F	R	bilateral frontal mesial	14	178	7	average	secondary	92
+sub-P17	51	M	R	bilateral frontal	15	187	41	average	secondary	90
+sub-P18	47	M	R	R temporo-insular	14	167	13	average	secondary	90
+sub-P19	18	M	R	R temporo-parietal-insular	15	149	4	average	primary	85
+sub-P2	36	M	R	R temporo-parietal-insular	16	126	12	above average	tertiary	90
+sub-P20	36	M	R	R temporo-parietal	13	125	29	below average	secondary	75
+sub-P3	38	F	R	bilateral fronto-insular	16	126	19	average	tertiary	78
+sub-P4	28	F	R	R fronto-temporal	11	126	10	average	tertiary	83
+sub-P5	63	M	R	L frontal + 2 electrodes in R frontal	15	192	46	average	tertiary	83
+sub-P6	24	F	L	R temporal	14	164	6	average	primary	65
+sub-P7	49	M	R	bilateral temporal + L frontal	11	126	27	average	tertiary	95
+sub-P8	30	F	L	bilateral temporal	14	186	19	average	tertiary	96
+sub-P9	46	M	R	R temporo-parieto-occipital	18	190	36	below average	primary	64

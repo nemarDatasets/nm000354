@@ -19,5 +19,38 @@
       "R": "right",
       "L": "left"
     }
+  },
+  "implantation_site": {
+    "Description": "Implanted hemisphere(s) and region, text of column \"Site of implantation (Nelectrodes/Ncontacts)\" without the counts, verbatim, Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx). L/R = left/right."
+  },
+  "n_electrodes": {
+    "Description": "Number of implanted SEEG electrodes (Nelectrodes in \"Site of implantation\"), Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx). The deposited bipolar channels come from at most this many electrodes for every subject (checked)."
+  },
+  "n_contacts": {
+    "Description": "Number of recording contacts implanted (Ncontacts in \"Site of implantation\"), Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx). Not the number of deposited channels (the source release keeps a bipolar subset)."
+  },
+  "epilepsy_duration": {
+    "Description": "Column \"Epilepsy duration\", Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx). The table does not state the unit; the values are consistent with years (always below the age)."
+  },
+  "cognitive_profile": {
+    "Description": "Column \"Cognitive profile\" (presurgical neuropsychological assessment, abridged WAIS-III battery), verbatim, Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx). \"below-average\" (P12) is printed with a hyphen in the source.",
+    "Levels": {
+      "above average": "above average",
+      "average": "average",
+      "below average": "below average",
+      "below-average": "below average (source spelling)"
+    }
+  },
+  "education": {
+    "Description": "Column \"Education\" (level of education), Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx).",
+    "Levels": {
+      "primary": "primary",
+      "secondary": "secondary",
+      "tertiary": "tertiary"
+    }
+  },
+  "task_success_rate": {
+    "Description": "Column \"Task success rate (%)\": success rate in the sequential arithmetic task, Supplementary Table T1 \"Subject details\" of Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0; 41598_2026_36122_MOESM1_ESM.docx).",
+    "Units": "%"
   }
 }
