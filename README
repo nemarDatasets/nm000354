@@ -25,3 +25,9 @@ are NOT in the deposited files and are therefore left n/a rather than invented.
 Known identical-content release: Zenodo 18245516 raw_data.zip has the same size and MD5 as this
 19550714 v4 copy and must not be deposited again. Zenodo 16778665 is an older, different-size archive
 and is excluded from this deposit.
+
+Ethics statement (verbatim from the source publication, Kalinova et al. 2026, Sci Rep 16:5587):
+Subjects participated voluntarily in the study after signing informed consent. The study was
+approved by the ethical committee of Motol University Hospital (EK-1340.27/20), Prague, Czechia.
+All ethical regulations relevant to human research participants were performed in accordance
+with the Declaration of Helsinki.
