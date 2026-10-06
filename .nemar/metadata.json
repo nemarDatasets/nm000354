@@ -1,6 +1,31 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Arithmetic calculations measured by intracranial EEG in the human brain",
+  "description": "Intracranial stereo-EEG (SEEG) recordings from 20 adult patients performing arithmetic calculations. The deposit contains source-preprocessed data: low-pass filtered, downsampled to 512 Hz, bipolar re-referenced and epoched around the first operand. Trials are concatenated per subject into BrainVision files, and electrode coordinates are given in MNI space. It supports study of the temporal order of cortical activations and interactions during mental arithmetic.",
+  "methods_description": "Data were acquired at 2048 Hz with DIXI SEEG electrodes and a Natus Quantum system. They were then low-pass filtered, downsampled to 512 Hz, bipolar re-referenced and epoched around the first operand by the original authors. Trials were concatenated back-to-back along time per subject for BIDS storage.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "arithmetic calculation"
+    },
+    {
+      "term": "Mathematics"
+    },
+    {
+      "term": "Electroencephalography"
+    },
+    {
+      "term": "bipolar re-referencing"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41598-026-36122-z",
@@ -18,14 +43,11 @@
       "relation_type": "IsDescribedBy"
     }
   ],
-  "title": "Arithmetic calculations measured by intracranial EEG in the human brain",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "2.45 GB (41 files)"
   ],
@@ -34,33 +56,22 @@
     ".json",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "Intracranial stereo-EEG (SEEG) recordings from 20 adult patients performing arithmetic calculations, deposited as a derivative. The data were low-pass filtered, downsampled to 512 Hz, bipolar re-referenced and epoched around the first operand, following the source publication. Trials are concatenated per subject into single BrainVision files, with electrode coordinates given in MNI space.",
-  "methods_description": "SEEG was acquired at 2048 Hz with DIXI electrodes and a Natus Quantum system. The source authors then low-pass filtered the signal, downsampled it to 512 Hz, applied bipolar re-referencing and epoched trials around the first operand. Trials were concatenated back-to-back per subject for BIDS storage.",
-  "keywords": [
-    {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
-    },
-    {
-      "term": "stereo-EEG"
-    },
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "arithmetic calculation"
-    },
-    {
-      "term": "Mathematics",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008433"
-    },
-    {
-      "term": "derivative dataset"
-    }
-  ],
-  "source_hash": "3f8b568fb63547ce15f53562d51e28a53257da93b3317b418e7c630e73c3fa1a"
+  "authors": {
+    "M. Kalinova": {},
+    "B. Kerkova": {},
+    "A. Kalina": {},
+    "V. Pytelova": {},
+    "J. Amlerova": {},
+    "R. Janca": {},
+    "P. Jezdik": {},
+    "D. Krysl": {},
+    "M. Kudr": {},
+    "P. Krsek": {},
+    "P. Marusic": {},
+    "J. Hammer": {}
+  },
+  "source_hash": "32f3b1777b1db68b8073256db85744d90273e90278dd6ef97818af70ecbc27ef"
 }
