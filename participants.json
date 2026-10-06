@@ -1,8 +1,23 @@
 {
- "age": {
-  "Description": "Not available per-participant; source reports only cohort-level stats (20 adults, 8 female, mean 36.2, range 18-63)."
- },
- "sex": {
-  "Description": "Not available per-participant; see age field note."
- }
+  "participant_id": {
+    "Description": "sub-P<n>; P<n> is the subjectTag of the source release (Zenodo 19550714) and the subject label of the paper (P1-P20)."
+  },
+  "age": {
+    "Description": "Age in years, column \"Age\" of Kalinova M. et al. (2026) \"Temporal order of activations and interactions during arithmetic calculations measured by intracranial electrophysiological recordings in the human brain\", Scientific Reports 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0), Supplementary Information file 41598_2026_36122_MOESM1_ESM.docx, Supplementary Table T1 \"Subject details\"; rows P1-P20 = source subjectTag P1-P20 = BIDS sub-P1..sub-P20. The paper Methods give the cohort summary: twenty subjects, eight females, average age 36.2 years, range 18-63 (consistent with these values).",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "Column \"Gender\" of Kalinova M. et al. (2026) \"Temporal order of activations and interactions during arithmetic calculations measured by intracranial electrophysiological recordings in the human brain\", Scientific Reports 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0), Supplementary Information file 41598_2026_36122_MOESM1_ESM.docx, Supplementary Table T1 \"Subject details\"; rows P1-P20 = source subjectTag P1-P20 = BIDS sub-P1..sub-P20.",
+    "Levels": {
+      "M": "male",
+      "F": "female"
+    }
+  },
+  "handedness": {
+    "Description": "Column \"Handedness\" of Kalinova M. et al. (2026) \"Temporal order of activations and interactions during arithmetic calculations measured by intracranial electrophysiological recordings in the human brain\", Scientific Reports 16:5587, doi:10.1038/s41598-026-36122-z (CC BY 4.0), Supplementary Information file 41598_2026_36122_MOESM1_ESM.docx, Supplementary Table T1 \"Subject details\"; rows P1-P20 = source subjectTag P1-P20 = BIDS sub-P1..sub-P20.",
+    "Levels": {
+      "R": "right",
+      "L": "left"
+    }
+  }
 }

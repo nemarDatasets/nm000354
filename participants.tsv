@@ -1,21 +1,21 @@
-participant_id	age	sex
-sub-P1	n/a	n/a
-sub-P10	n/a	n/a
-sub-P11	n/a	n/a
-sub-P12	n/a	n/a
-sub-P13	n/a	n/a
-sub-P14	n/a	n/a
-sub-P15	n/a	n/a
-sub-P16	n/a	n/a
-sub-P17	n/a	n/a
-sub-P18	n/a	n/a
-sub-P19	n/a	n/a
-sub-P2	n/a	n/a
-sub-P20	n/a	n/a
-sub-P3	n/a	n/a
-sub-P4	n/a	n/a
-sub-P5	n/a	n/a
-sub-P6	n/a	n/a
-sub-P7	n/a	n/a
-sub-P8	n/a	n/a
-sub-P9	n/a	n/a
+participant_id	age	sex	handedness
+sub-P1	44	M	R
+sub-P10	30	M	L
+sub-P11	36	F	R
+sub-P12	36	M	R
+sub-P13	23	M	L
+sub-P14	42	F	R
+sub-P15	24	F	R
+sub-P16	23	F	R
+sub-P17	51	M	R
+sub-P18	47	M	R
+sub-P19	18	M	R
+sub-P2	36	M	R
+sub-P20	36	M	R
+sub-P3	38	F	R
+sub-P4	28	F	R
+sub-P5	63	M	R
+sub-P6	24	F	L
+sub-P7	49	M	R
+sub-P8	30	F	L
+sub-P9	46	M	R
