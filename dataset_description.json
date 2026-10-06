@@ -3,6 +3,23 @@
  "BIDSVersion": "1.9.0",
  "DatasetType": "derivative",
  "License": "CC-BY-4.0",
+ "Authors": [
+  "M. Kalinova",
+  "B. Kerkova",
+  "A. Kalina",
+  "V. Pytelova",
+  "J. Amlerova",
+  "R. Janca",
+  "P. Jezdik",
+  "D. Krysl",
+  "M. Kudr",
+  "P. Krsek",
+  "P. Marusic",
+  "J. Hammer"
+ ],
+ "EthicsApprovals": [
+  "Approved by the ethical committee of Motol University Hospital (EK-1340.27/20), Prague, Czechia. All ethical regulations relevant to human research participants were performed in accordance with the Declaration of Helsinki. (verbatim from the source publication, Kalinova et al. 2026, Sci Rep 16:5587)"
+ ],
  "ReferencesAndLinks": [
   "https://doi.org/10.1038/s41598-026-36122-z",
   "https://zenodo.org/records/19550714"
