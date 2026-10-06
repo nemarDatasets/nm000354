@@ -2,28 +2,47 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Arithmetic calculations measured by intracranial EEG in the human brain",
-  "description": "Intracranial stereo-EEG (SEEG) recordings from 20 adult patients performing arithmetic calculations. The deposit contains source-preprocessed data: low-pass filtered, downsampled to 512 Hz, bipolar re-referenced and epoched around the first operand. Trials are concatenated per subject into BrainVision files, and electrode coordinates are given in MNI space. It supports study of the temporal order of cortical activations and interactions during mental arithmetic.",
-  "methods_description": "Data were acquired at 2048 Hz with DIXI SEEG electrodes and a Natus Quantum system. They were then low-pass filtered, downsampled to 512 Hz, bipolar re-referenced and epoched around the first operand by the original authors. Trials were concatenated back-to-back along time per subject for BIDS storage.",
+  "description": "Stereo-EEG recordings from 20 epilepsy surgery candidates performing a sequential three-operand arithmetic task (easy and difficult equations in several stimulus formats). The deposit contains preprocessed, bipolar-referenced epochs spanning -2 to +7 s around the first operand, with MNI coordinates of the bipolar contact pairs. It supports an analysis of the temporal order of activations and interactions in the human brain during arithmetic calculation.",
+  "methods_description": "Recordings used DIXI Medical SEEG electrodes sampled at 2048 Hz with Natus Quantum amplifiers. Stimuli were presented with PsychToolBox and synchronized to the iEEG via a parallel-port trigger. Preprocessing: low-pass Chebyshev filtering, downsampling to 512 Hz, bipolar referencing, 0.1 Hz high-pass filtering, 50 Hz notch filtering with harmonics, and epoching around the first operand.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
+  "authors": {
+    "M. Kalinova": {},
+    "B. Kerkova": {},
+    "A. Kalina": {},
+    "V. Pytelova": {},
+    "J. Amlerova": {},
+    "R. Janca": {},
+    "P. Jezdik": {},
+    "D. Krysl": {},
+    "M. Kudr": {},
+    "P. Krsek": {},
+    "P. Marusic": {},
+    "J. Hammer": {}
+  },
   "keywords": [
     {
-      "term": "intracranial EEG"
+      "term": "Intracranial EEG"
     },
     {
       "term": "stereo-EEG"
     },
     {
-      "term": "arithmetic calculation"
+      "term": "arithmetic"
     },
     {
-      "term": "Mathematics"
+      "term": "numerical cognition"
     },
     {
-      "term": "Electroencephalography"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "bipolar re-referencing"
+      "term": "functional connectivity"
+    },
+    {
+      "term": "high-gamma activity"
     }
   ],
   "related_identifiers": [
@@ -41,6 +60,11 @@
       "identifier": "https://nemar.org/dataset/nm000354",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.19550714",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
@@ -59,19 +83,16 @@
     ".vmrk",
     ".yml"
   ],
-  "authors": {
-    "M. Kalinova": {},
-    "B. Kerkova": {},
-    "A. Kalina": {},
-    "V. Pytelova": {},
-    "J. Amlerova": {},
-    "R. Janca": {},
-    "P. Jezdik": {},
-    "D. Krysl": {},
-    "M. Kudr": {},
-    "P. Krsek": {},
-    "P. Marusic": {},
-    "J. Hammer": {}
-  },
-  "source_hash": "32f3b1777b1db68b8073256db85744d90273e90278dd6ef97818af70ecbc27ef"
+  "funding_references": [
+    {
+      "funder_name": "European Regional Development Fund",
+      "award_number": "CZ.02.01.01/00/22_008/0004643",
+      "award_title": "Brain Dynamics"
+    },
+    {
+      "funder_name": "Grant Agency of Charles University",
+      "award_number": "272221"
+    }
+  ],
+  "source_hash": "d4dba164225039ef512e7f9a29a1eacd979da8c0cce9da138b4609db48982e71"
 }
