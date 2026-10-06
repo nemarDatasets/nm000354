@@ -1,0 +1,5 @@
+{
+ "iEEGCoordinateSystem": "MNI152NLin2009cAsym",
+ "iEEGCoordinateSystemDescription": "channels_MNI as supplied by source; mm assumed by MNI convention.",
+ "iEEGCoordinateUnits": "mm"
+}

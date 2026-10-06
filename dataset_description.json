@@ -1,0 +1,22 @@
+{
+ "Name": "Arithmetic calculations measured by intracranial EEG in the human brain",
+ "BIDSVersion": "1.9.0",
+ "DatasetType": "derivative",
+ "License": "CC-BY-4.0",
+ "ReferencesAndLinks": [
+  "https://doi.org/10.1038/s41598-026-36122-z",
+  "https://zenodo.org/records/19550714"
+ ],
+ "SourceDatasets": [
+  {
+   "URL": "https://zenodo.org/records/19550714",
+   "Version": "v4"
+  }
+ ],
+ "GeneratedBy": [
+  {
+   "Name": "source-provided preprocessing (authors)",
+   "Description": "Per source publication: 2048 Hz DIXI SEEG acquisition downsampled to 512 Hz, bipolar-referenced, filtered, epoched -2..+7s around first operand. This archive as published is NOT continuous raw acquisition; deposited here as a derivative, matching its true processing state."
+  }
+ ]
+}
