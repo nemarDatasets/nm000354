@@ -1,0 +1,8 @@
+{
+ "age": {
+  "Description": "Not available per-participant; source reports only cohort-level stats (20 adults, 8 female, mean 36.2, range 18-63)."
+ },
+ "sex": {
+  "Description": "Not available per-participant; see age field note."
+ }
+}

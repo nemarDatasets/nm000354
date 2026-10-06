@@ -1,0 +1,27 @@
+IEEG006 arithmetic SEEG - deposited as a DERIVATIVE, not raw.
+
+Source publication (Kalinova et al. 2026, Sci Rep, doi:10.1038/s41598-026-36122-z) describes acquisition
+at 2048 Hz with DIXI SEEG electrodes and a Natus Quantum system, then LOW-PASS FILTERING, DOWNSAMPLING to
+512 Hz, BIPOLAR RE-REFERENCING and EPOCHING (-2..+9s around the first operand) before deposit. The
+deposited trials_P*.mat arrays match exactly this processed/epoched form (512 Hz, bipolar channel names
+like J1~J2, 4609-sample windows spanning -2..+7s in the inspected canary), not acquisition-raw signal.
+Per campaign policy, this is therefore placed under derivatives/source-preprocessed-seeg/, not sourcedata-
+as-raw BIDS.
+
+Each subject's trials are concatenated back-to-back along time to form a single BrainVision file so that
+mne-bids can write it; this is an explicit non-physiological concatenation for storage, NOT a claim of a
+continuous recording. events.tsv onsets mark each trial boundary in the concatenated series; trial_type
+is only a positional index (trial-NNN), not stimulus content, because the source MATLAB 'stimuliValues'
+table (per-trial equation/difficulty/correctness/response) could not be decoded from the HDF5-backed MAT
+structure with the tools available in this pass and is NOT fabricated here. It remains available in
+sourcedata/raw_data.zip for a future pass with a MATLAB-table-capable reader.
+
+Channel/value units: the source does not state physical units for 'trials'; values are treated as
+unconfirmed microvolt-scale for file-writer purposes only. electrodes.tsv uses source channels_MNI
+coordinates (mm assumed by MNI convention). Participant age/sex are reported only at the cohort level
+in the source publication (20 adults, 8 female, mean 36.2, range 18-63); per-participant demographics
+are NOT in the deposited files and are therefore left n/a rather than invented.
+
+Known identical-content release: Zenodo 18245516 raw_data.zip has the same size and MD5 as this
+19550714 v4 copy and must not be deposited again. Zenodo 16778665 is an older, different-size archive
+and is excluded from this deposit.
