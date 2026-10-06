@@ -8,9 +8,10 @@ The deposited data are preprocessed, bipolar-referenced epochs, so this is a BID
 
 Source publication (Kalinova et al. 2026, Sci Rep, doi:10.1038/s41598-026-36122-z) describes acquisition
 at 2048 Hz with DIXI SEEG electrodes and a Natus Quantum system, then LOW-PASS FILTERING, DOWNSAMPLING to
-512 Hz, BIPOLAR RE-REFERENCING and EPOCHING (-2..+9s around the first operand) before deposit. The
+512 Hz, BIPOLAR RE-REFERENCING and EPOCHING (deposited epochs: -2..+7 s around the first operand) before deposit. The
 deposited trials_P*.mat arrays match exactly this processed/epoched form (512 Hz, bipolar channel names
-like J1~J2, 4609-sample windows spanning -2..+7s in the inspected canary), not acquisition-raw signal.
+like J1~J2, 4609-sample windows spanning -2..+7 s in all 20 files), not acquisition-raw signal. (The publication's
+Methods extract -2..+9 s trials for its own analyses; the deposited files hold -2..+7 s, source `D.time`.)
 Per campaign policy, this is therefore placed under derivatives/source-preprocessed-seeg/, not sourcedata-
 as-raw BIDS.
 
@@ -62,12 +63,13 @@ as-raw BIDS.
 - Data README (Zenodo raw_data.zip, trialsData_readme): "Raw iEEG data means that they were bipolar referenced, high-pass
   filtered (at 0.1 Hz) and notch filtered at 50 Hz and harmonics."
 - All of the above is recorded in `SoftwareFilters` and `iEEGReference` of each `*_ieeg.json` and in `GeneratedBy`.
+- `*_channels.tsv`: `low_cutoff` 0.1 Hz = the publication's and data README's high-pass; `high_cutoff` 400 Hz = the
+  publication's anti-aliasing low-pass, applied at 2048 Hz before downsampling (the released 512 Hz signal has a Nyquist
+  frequency of 256 Hz).
 
 ## Known caveats
-- Everything in the original notes is kept verbatim in this README (first paragraphs and the sections below).
-- The epoch window is -2..+7 s around N1 (source `D.time`, all 20 files); the "-2..+9s" in the first paragraph is kept
-  verbatim but does not match the files.
-- `low_cutoff` 0.0 / `high_cutoff` 256.0 in `*_channels.tsv` are writer defaults; the source filters are listed above.
+- Everything in the original notes is kept in this README (first paragraphs and the sections below); only the epoch
+  window in the first paragraph was corrected from "-2..+9s" to the files' -2..+7 s.
 - The *_ieeg.json `Manufacturer` previously read "Brain Products" (a BrainVision writer default); it now reads Natus (Quantum).
 - The coordinate system label MNI152NLin2009cAsym was chosen at conversion; the source says only that the MRI scans were
   normalized to MNI space with SPM12.
