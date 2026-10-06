@@ -1,5 +1,5 @@
 {
  "iEEGCoordinateSystem": "MNI152NLin2009cAsym",
- "iEEGCoordinateSystemDescription": "channels_MNI as supplied by source; mm assumed by MNI convention.",
+ "iEEGCoordinateSystemDescription": "channels_MNI as supplied by source; mm assumed by MNI convention. Source: 'channels_MNI: MNI coordinates of the channel (center of the bipolar pair)' (trialsData_readme (data-structure description in Zenodo 10.5281/zenodo.19550714 raw_data.zip)); contacts were localized by co-registering post-implantation CT with pre-implantation MRI, and 'the MRI scans were normalized to MNI space using SPM12' (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods 'Channel localization'). The source names no specific MNI template; the label MNI152NLin2009cAsym was chosen at conversion.",
  "iEEGCoordinateUnits": "mm"
 }

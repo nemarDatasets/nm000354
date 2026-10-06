@@ -1,12 +1,32 @@
 {
     "TaskName": "arithmetic",
-    "Manufacturer": "Brain Products",
-    "PowerLineFrequency": "n/a",
+    "Manufacturer": "Natus",
+    "PowerLineFrequency": 50,
     "SamplingFrequency": 512.0,
-    "SoftwareFilters": "n/a",
+    "SoftwareFilters": {
+        "Anti-aliasing low-pass": {
+            "Type": "Chebyshev Type I IIR, 8th order, zero phase",
+            "Cutoff (Hz)": 400,
+            "Description": "applied before downsampling from 2048 Hz to 512 Hz (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods)"
+        },
+        "High-pass": {
+            "Type": "Butterworth, 6th order, zero phase",
+            "Cutoff (Hz)": 0.1,
+            "Description": "to remove slow drifts (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods; trialsData_readme (data-structure description in Zenodo 10.5281/zenodo.19550714 raw_data.zip))"
+        },
+        "Notch": {
+            "Type": "Butterworth, 6th order, zero phase",
+            "Frequencies (Hz)": [
+                50,
+                100,
+                150
+            ],
+            "Description": "notch at 50 Hz and its harmonics to reduce line noise, e.g. 48-52 Hz stop band (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods; trialsData_readme (data-structure description in Zenodo 10.5281/zenodo.19550714 raw_data.zip))"
+        }
+    },
     "RecordingDuration": 1053.2265625,
-    "RecordingType": "continuous",
-    "iEEGReference": "n/a",
+    "RecordingType": "epoched",
+    "iEEGReference": "Bipolar: each contact referenced to its closest neighbour on the same SEEG electrode shank, starting from the deepest contact (channel names 'A~B'). Acquisition reference and ground electrodes were placed at the depth of the white matter. (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods)",
     "ECOGChannelCount": 0,
     "SEEGChannelCount": 56,
     "EEGChannelCount": 0,
@@ -14,5 +34,15 @@
     "ECGChannelCount": 0,
     "EMGChannelCount": 0,
     "MiscChannelCount": 0,
-    "TriggerChannelCount": 0
+    "TriggerChannelCount": 0,
+    "ManufacturersModelName": "Quantum",
+    "ElectrodeManufacturer": "DIXI Medical",
+    "iEEGGround": "At the depth of the white matter (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods)",
+    "iEEGPlacementScheme": "Stereo-EEG; the implantation scheme depended solely on the clinical hypothesis (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods); implantation site per participant in participants.tsv (Suppl. Table T1)",
+    "TaskDescription": "Sequential three-operand arithmetic equations (e.g. 6 + 3 - 2 = 8, yes/no): fixation cross (a star, 1.05-1.55 s), then operand N1, operator O1 (plus or minus), operand N2, operator O2, operand N3, equals sign and a proposed result, each stimulus presented for 1.05 s; the result was correct in 50% of trials and otherwise differed by one. 'Easy' equations (result not exceeding 10; operands as Arabic numbers, dice symbols, fingers or number words, one format per equation) and 'difficult' equations (results greater than 10, Arabic numbers only) were run in separate sessions (easy about 6 min, difficult about 2 min; 4-5 sessions, at least 40 equations per stimulus category). Stimuli were white on a dark grey background on a PC screen about 1.5 m from the subject's eyes; implemented in PsychToolBox 3.0, with stimulus onsets synchronized to the iEEG via a parallel-port trigger channel. (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods 'Sequential arithmetic equations task')",
+    "Instructions": "Determine whether the proposed result is true or false and press the corresponding button on the gamepad (Logitech F310): green = true, red = false, blue = do not know; 5 s to answer; feedback after each answer (smiling face and 'hooray' sound for correct; sad face and 'boo' sound for incorrect, 'don't know' or time-out). (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods)",
+    "EpochLength": 9.001953125,
+    "InstitutionName": "Motol University Hospital",
+    "InstitutionAddress": "Prague, Czechia",
+    "InstitutionalDepartmentName": "Department of Neurology, Second Faculty of Medicine, Charles University and Motol University Hospital"
 }

@@ -1,19 +1,19 @@
 {
     "onset": {
-        "Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+        "Description": "Start (s) of the trial's 9.002 s epoch within the concatenated file. Source epochs span -2.0 to +7.0 s (4609 samples at 512 Hz) relative to the onset of the first operand N1 (source D.time; trialsData_readme (data-structure description in Zenodo 10.5281/zenodo.19550714 raw_data.zip)), so N1 onset = onset + 2.0 s.",
         "Units": "s"
     },
     "duration": {
-        "Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+        "Description": "Length of one source epoch, 4609 samples / 512 Hz = 9.001953125 s.",
         "Units": "s"
     },
     "sample": {
         "Description": "The event onset time in number of sampling points.First sample is 0."
     },
     "value": {
-        "Description": "The event code (also known as trigger code or event ID) associated with the event."
+        "Description": "Integer event ID assigned by the BIDS writer (MNE-BIDS) to each trial_type; equals the trial index."
     },
     "trial_type": {
-        "Description": "The type, category, or name of the event."
+        "Description": "Positional trial index 'trial-NNN' = NNN-th trial (third dimension) of the source D.trials array, which is also row NNN of the source D.stimuliValues table (N1, N2, N3, O1, O2, RT, stimType; not exported here). Not stimulus content."
     }
 }
