@@ -1,0 +1,177 @@
+{
+ "created": "2026-10-07",
+ "tool": "harness/srcadd_stage.py",
+ "note": "Zenodo record 19550714 (raw_data.zip, Kalinova2026_NUM_equations.pdf), CC-BY-4.0. raw_data.zip extracted (paths as in the archive); MAT-file header 'Created on' weekday/day masked; no other change.",
+ "mat_header_rule": "MAT-file header 'Created on' weekday -> '---', day-of-month -> 01; no other byte changed",
+ "sources": [
+  {
+   "src": "raw_data.zip",
+   "bytes": 5092430437,
+   "sha256": "7671af6d8d28d9d72efba7bcc275eb59cda64c3af3938c8cc246e9b7d0a7013f",
+   "mode": "extract"
+  },
+  {
+   "src": "Kalinova2026_NUM_equations.pdf",
+   "bytes": 14016685,
+   "sha256": "e7c82661f2445ff669d7de776b644d8566a5d7ef62eee573a8a79f5599d5604e",
+   "mode": "copy"
+  }
+ ],
+ "files": [
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trialsData_readme.pdf",
+   "bytes": 575244,
+   "sha256_original": "2bc2d2470173c1ed78483ae7c40aac5344b3ac5c5efa80475d0ed42f9d73bed8",
+   "sha256_public": "2bc2d2470173c1ed78483ae7c40aac5344b3ac5c5efa80475d0ed42f9d73bed8",
+   "mat_header_day_masked": false
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P1.mat",
+   "bytes": 130683653,
+   "sha256_original": "85711ecd3499b0aed551eb738ff983072e73ee36ccbb8fabba23e2fbcc8f2ef8",
+   "sha256_public": "eb82b34b4ae888ed11954e6a1e1a74548f182749e48f09176029bcc3a0ca7952",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P10.mat",
+   "bytes": 158044486,
+   "sha256_original": "fe51ab5b938b3f214b34abbd3065293a21b685af64a7e671b962c60305318ed9",
+   "sha256_public": "7faacaeee2bd9ee73e20279a131010d909a9e5bb8f2d2fff5595aba2a5db27b1",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P11.mat",
+   "bytes": 342255662,
+   "sha256_original": "e69ccfb2249931bb5fcb7d64ef61d64397d7c1b0f94342ae45fa9912572309fd",
+   "sha256_public": "fdd4ccd1f8fe60c47207b1ab279ed97a3e18f226a3fc1a018e9fa09f9d5dc632",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P12.mat",
+   "bytes": 299836816,
+   "sha256_original": "19eddadc4dfa8e3757f3d77904052cb4fc58bf05e6b8ebfb20c2fcc70f13bed5",
+   "sha256_public": "4448c947249397a44199f95bdf00e916974ed04471cb7afe6ff5d2430ec9990e",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P13.mat",
+   "bytes": 151644564,
+   "sha256_original": "06cb6a68d56d70dfbcf6476249548ff91a399100465d233551083cf2a19feb0c",
+   "sha256_public": "e740b378c4a3745ff21d8151bbc3f21eeee8cbb8040d27255fca4bf8b803619d",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P14.mat",
+   "bytes": 283487814,
+   "sha256_original": "9c2de8fcd5e40c5a608ce8d2c6c564144a02afc4d14acd9c822c01d9a1479afc",
+   "sha256_public": "bfc8c63cd2d523592e17365de083fd80604975f2ccb0859f8462b29ecad97bb2",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P15.mat",
+   "bytes": 288895848,
+   "sha256_original": "f3b0adc4d71646cd0257f6bd30cba9dc70afde7e0b0320681f6798f49fe8f57c",
+   "sha256_public": "906622a337caa42ccd1685d2c5047e9becb2d6a47d89dfdcf5475fcd8f0e3a0a",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P16.mat",
+   "bytes": 398387516,
+   "sha256_original": "60cda56214e937b1f5993e03eb077c5719605d50a3957cd2b751a934004e1f21",
+   "sha256_public": "2c9ef24aaea5d720c42f1354c7e8cbc54f58acbe37e4a0e6bca9131201a6a6af",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P17.mat",
+   "bytes": 350351624,
+   "sha256_original": "2c866fa664d4995b6b8c2467815597a7ea4ef8e6ecc93d3ee3ae2585362dd31e",
+   "sha256_public": "9873714d4699efb8f65b5d83952d90e973b39da33ec8ebf3c938b65c09ba28ce",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P18.mat",
+   "bytes": 245306299,
+   "sha256_original": "2eaa07409d5442dcd40dae61a23f72c0be628afd9ebc6e244fc2e18b256f2b3c",
+   "sha256_public": "48a67bd986878fe6576c3ed1bf5c0306f369187b023df3c90c8ca8c34c1d0e1b",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P19.mat",
+   "bytes": 217541445,
+   "sha256_original": "3cdb0c734f0b6a2f2d9e1d35d914ddc74913714971161d045f44b4a0dae0039d",
+   "sha256_public": "edff422c47331639e7876727bce7b15e28655feda6707a52aaad2ce6e5fee512",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P2.mat",
+   "bytes": 233912948,
+   "sha256_original": "1d2e0089070f6b5a0d3ae08b7c521d4c52fb5f154478f380a4fe6397a0b3beda",
+   "sha256_public": "a06f43072c4a4d44b30a4710031992129405fe64bbf06aa867cb350df3444166",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P20.mat",
+   "bytes": 227429364,
+   "sha256_original": "f7ef59aaba95582b93aaf864daa79bcb939e75db27ca6fd18f91b4ae1b6fd54b",
+   "sha256_public": "a1dff4b3ebcf676a1fa28ebda7ce3b61711f00b7cdf9c0ba20c3638b4be6b532",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P3.mat",
+   "bytes": 142166653,
+   "sha256_original": "d1e5da5860a1836ee57b5386a1cde2c54bbe01ed60f055426148ffefae9cf0d1",
+   "sha256_public": "e67cec3b3c506fc9c0ddf56c42b751305e0cafff00195fc68ef5cf65288d3824",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P4.mat",
+   "bytes": 171751369,
+   "sha256_original": "e0ac74d03e9f544eaf13f156ec65a84f7b3b3650e52196ef0ba1ddb733d8f2c0",
+   "sha256_public": "f47f10cf02819c960171009b77f22db773b3b523b0e36be7ed55c79507c6481c",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P5.mat",
+   "bytes": 375113721,
+   "sha256_original": "6cbf1818deb7e6992d8385743bf2a25b08a481eac2a2f522d0c59cda5455c048",
+   "sha256_public": "643c03680d0d2b38af4746ebdbf2b960ae4008fc3ae762f7179bdf621a319773",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P6.mat",
+   "bytes": 225231050,
+   "sha256_original": "cc38bfeafb602cb672fb17c9f66fbb63d7914285dce83916328aef2dfbd5c2fe",
+   "sha256_public": "0aa8ea7fb74d0b3c067c30fb767237bc99e5d0244759f73ee7bf2f5a4622a426",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P7.mat",
+   "bytes": 259008931,
+   "sha256_original": "a572fe7925f554fc825b488a348ec3782655e0b3cafc50e57ba332a0817d7910",
+   "sha256_public": "457c5f61e2b0f38cb579783350d514882063c1cedf3dbe0ea04083cc7fa20d11",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P8.mat",
+   "bytes": 332372249,
+   "sha256_original": "54058dc56a8d735fcd3647f2c31a549f283d5ae3f5749972ed4b593ecb3d260b",
+   "sha256_public": "b16fb7917cb3261d5f67fa1c4a98d09c8874ae276ff7e70f6442573e903c0630",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/raw_data/trials_P9.mat",
+   "bytes": 265427168,
+   "sha256_original": "006a626c02889fd894716ad537adc5497aada7e649fc5c9b649438b0d433b3a0",
+   "sha256_public": "57f980113b27fde3a9b4d7996dc1473f91a8225297a317d4888d5fb2f7331d11",
+   "mat_header_day_masked": true
+  },
+  {
+   "path": "sourcedata/zenodo-19550714/Kalinova2026_NUM_equations.pdf",
+   "bytes": 14016685,
+   "sha256_original": "e7c82661f2445ff669d7de776b644d8566a5d7ef62eee573a8a79f5599d5604e",
+   "sha256_public": "e7c82661f2445ff669d7de776b644d8566a5d7ef62eee573a8a79f5599d5604e",
+   "mat_header_day_masked": false
+  }
+ ],
+ "excluded": []
+}
