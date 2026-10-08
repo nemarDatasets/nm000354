@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Arithmetic calculations measured by intracranial EEG in the human brain",
-  "description": "Stereo-EEG recordings from 20 epilepsy surgery candidates performing a sequential three-operand arithmetic task (easy and difficult equations in several stimulus formats). The deposit contains preprocessed, bipolar-referenced epochs spanning -2 to +7 s around the first operand, with MNI coordinates of the bipolar contact pairs. It supports an analysis of the temporal order of activations and interactions in the human brain during arithmetic calculation.",
-  "methods_description": "Recordings used DIXI Medical SEEG electrodes sampled at 2048 Hz with Natus Quantum amplifiers. Stimuli were presented with PsychToolBox and synchronized to the iEEG via a parallel-port trigger. Preprocessing: low-pass Chebyshev filtering, downsampling to 512 Hz, bipolar referencing, 0.1 Hz high-pass filtering, 50 Hz notch filtering with harmonics, and epoching around the first operand.",
+  "description": "Stereo-EEG recordings from 20 epilepsy surgery candidates performing a sequential three-operand arithmetic task (easy and difficult equations in several numerical formats). The deposit contains preprocessed, bipolar-referenced epochs (512 Hz, -2 to +7 s around the first operand) with MNI electrode coordinates, and is released as a BIDS derivative of the authors' Zenodo data. It supports analysis of the temporal order of activations and interactions in brain networks during arithmetic calculation.",
+  "methods_description": "SEEG was recorded with DIXI Medical electrodes and Natus Quantum amplifiers at 2048 Hz during pre-surgical evaluation. Stimuli were presented with PsychToolBox and synchronized by parallel-port triggers. Preprocessing by the source authors: low-pass filtering at 400 Hz and downsampling to 512 Hz, rejection of channels in seizure onset or irritative zones and of broken channels, bipolar referencing, 0.1 Hz high-pass filtering, 50 Hz notch filtering with harmonics, and epoching.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -67,22 +67,6 @@
       "relation_type": "IsDerivedFrom"
     }
   ],
-  "resource_type_general": "Dataset",
-  "resource_type_specific": "iEEG Dataset",
-  "modalities": [
-    "ieeg"
-  ],
-  "sizes": [
-    "2.45 GB (41 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".tsv",
-    ".vhdr",
-    ".vmrk",
-    ".yml"
-  ],
   "funding_references": [
     {
       "funder_name": "European Regional Development Fund",
@@ -90,9 +74,28 @@
       "award_title": "Brain Dynamics"
     },
     {
-      "funder_name": "Grant Agency of Charles University",
+      "funder_name": "Grant Agency of Charles University (GA UK)",
       "award_number": "272221"
     }
   ],
-  "source_hash": "d4dba164225039ef512e7f9a29a1eacd979da8c0cce9da138b4609db48982e71"
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "sizes": [
+    "7.21 GB (63 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".mat",
+    ".md",
+    ".pdf",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "9a6f060241af7197ae40cff2ad8f1b13f3cf738ac7e56b280b0e4aee9f7749c5"
 }
