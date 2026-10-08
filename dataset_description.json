@@ -1,65 +1,67 @@
 {
- "Name": "Arithmetic calculations measured by intracranial EEG in the human brain",
- "BIDSVersion": "1.9.0",
- "DatasetType": "derivative",
- "License": "CC-BY-4.0",
- "Authors": [
-  "M. Kalinova",
-  "B. Kerkova",
-  "A. Kalina",
-  "V. Pytelova",
-  "J. Amlerova",
-  "R. Janca",
-  "P. Jezdik",
-  "D. Krysl",
-  "M. Kudr",
-  "P. Krsek",
-  "P. Marusic",
-  "J. Hammer"
- ],
- "EthicsApprovals": [
-  "Approved by the ethical committee of Motol University Hospital (EK-1340.27/20), Prague, Czechia. All ethical regulations relevant to human research participants were performed in accordance with the Declaration of Helsinki. (verbatim from the source publication, Kalinova et al. 2026, Sci Rep 16:5587)"
- ],
- "ReferencesAndLinks": [
-  "https://doi.org/10.1038/s41598-026-36122-z",
-  "https://zenodo.org/records/19550714",
-  "https://doi.org/10.5281/zenodo.19550714",
-  "https://zenodo.org/records/18245516",
-  "https://github.com/JiriHammer/SEEG_dataAnalysis"
- ],
- "SourceDatasets": [
-  {
-   "URL": "https://zenodo.org/records/19550714",
-   "Version": "v4",
-   "DOI": "doi:10.5281/zenodo.19550714"
-  }
- ],
- "GeneratedBy": [
-  {
-   "Name": "source-provided preprocessing (authors)",
-   "Description": "Per source publication: 2048 Hz DIXI SEEG acquisition downsampled to 512 Hz, bipolar-referenced, filtered, epoched -2..+7s around first operand. This archive as published is NOT continuous raw acquisition; deposited here as a derivative, matching its true processing state. Details: low-pass 8th order Chebyshev Type I IIR, cutoff 400 Hz, zero phase, then downsampling to 512 Hz; contacts in seizure onset or irritative zones and broken channels rejected; bipolar referencing between every contact and its closest neighbour on each shank starting from the deepest contact; high-pass 0.1 Hz (Butterworth, 6th order, zero phase); notch at 50 Hz and harmonics (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods 'iEEG data recording and preprocessing'). The data-structure README states: 'Raw iEEG data means that they were bipolar referenced, high-pass filtered (at 0.1 Hz) and notch filtered at 50 Hz and harmonics.' (trialsData_readme (data-structure description in Zenodo 10.5281/zenodo.19550714 raw_data.zip)).",
-   "CodeURL": "https://github.com/JiriHammer/SEEG_dataAnalysis"
-  },
-  {
-   "Name": "laneC_convert.py (ieeg-nemar-20261005 harness)",
-   "Description": "Wrote each subject's D.trials epochs back-to-back into one BrainVision file with MNE-BIDS (storage concatenation only; no further filtering, resampling or re-referencing); channels_MNI written to electrodes.tsv."
-  }
- ],
- "Acknowledgements": "Motol University Hospital is a full member of ERN EpiCARE. All authors are members of the Epilepsy Research Centre Prague - EpiReC consortium. The authors would like to thank the patients for their participation in this study and CESNET for access to their data storage facility. (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Acknowledgements)",
- "HowToAcknowledge": "Cite Kalinova M, Kerkova B, Kalina A, et al. (2026) Temporal order of activations and interactions during arithmetic calculations measured by intracranial electrophysiological recordings in the human brain. Sci Rep 16:5587. doi:10.1038/s41598-026-36122-z; and the data record: Hammer J, Marusic P (2026). Dataset: arithmetic calculations measured by intracranial EEG in the human brain (v4). Zenodo. doi:10.5281/zenodo.19550714",
- "Funding": [
-  "ERDF-Project Brain Dynamics, No. CZ.02.01.01/00/22_008/0004643",
-  "Grant Agency of Charles University (GA UK), Grant No. 272221"
- ],
- "Keywords": [
-  "Brain network dynamics",
-  "Intracranial electroencephalography (iEEG)",
-  "Numerical cognition",
-  "Functional connectivity",
-  "High-gamma band activity (HGB)",
-  "Phase-locking value (PLV)",
-  "SEEG",
-  "arithmetic",
-  "epilepsy"
- ]
+  "Name": "Arithmetic calculations measured by intracranial EEG in the human brain",
+  "BIDSVersion": "1.9.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "M. Kalinova",
+    "B. Kerkova",
+    "A. Kalina",
+    "V. Pytelova",
+    "J. Amlerova",
+    "R. Janca",
+    "P. Jezdik",
+    "D. Krysl",
+    "M. Kudr",
+    "P. Krsek",
+    "P. Marusic",
+    "J. Hammer"
+  ],
+  "EthicsApprovals": [
+    "Approved by the ethical committee of Motol University Hospital (EK-1340.27/20), Prague, Czechia. All ethical regulations relevant to human research participants were performed in accordance with the Declaration of Helsinki. (verbatim from the source publication, Kalinova et al. 2026, Sci Rep 16:5587)"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1038/s41598-026-36122-z",
+    "https://zenodo.org/records/19550714",
+    "https://doi.org/10.5281/zenodo.19550714",
+    "https://zenodo.org/records/18245516",
+    "https://github.com/JiriHammer/SEEG_dataAnalysis"
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://zenodo.org/records/19550714",
+      "Version": "v4",
+      "DOI": "doi:10.5281/zenodo.19550714"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "source-provided preprocessing (authors)",
+      "Description": "Per source publication: 2048 Hz DIXI SEEG acquisition downsampled to 512 Hz, bipolar-referenced, filtered, epoched -2..+7s around first operand. This archive as published is NOT continuous raw acquisition; deposited here as a derivative, matching its true processing state. Details: low-pass 8th order Chebyshev Type I IIR, cutoff 400 Hz, zero phase, then downsampling to 512 Hz; contacts in seizure onset or irritative zones and broken channels rejected; bipolar referencing between every contact and its closest neighbour on each shank starting from the deepest contact; high-pass 0.1 Hz (Butterworth, 6th order, zero phase); notch at 50 Hz and harmonics (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods 'iEEG data recording and preprocessing'). The data-structure README states: 'Raw iEEG data means that they were bipolar referenced, high-pass filtered (at 0.1 Hz) and notch filtered at 50 Hz and harmonics.' (trialsData_readme (data-structure description in Zenodo 10.5281/zenodo.19550714 raw_data.zip)).",
+      "CodeURL": "https://github.com/JiriHammer/SEEG_dataAnalysis"
+    },
+    {
+      "Name": "laneC_convert.py (ieeg-nemar-20261005 harness)",
+      "Description": "Wrote each subject's D.trials epochs back-to-back into one BrainVision file with MNE-BIDS (storage concatenation only; no further filtering, resampling or re-referencing); channels_MNI written to electrodes.tsv."
+    }
+  ],
+  "Acknowledgements": "Motol University Hospital is a full member of ERN EpiCARE. All authors are members of the Epilepsy Research Centre Prague - EpiReC consortium. The authors would like to thank the patients for their participation in this study and CESNET for access to their data storage facility. (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Acknowledgements)",
+  "HowToAcknowledge": "Cite Kalinova M, Kerkova B, Kalina A, et al. (2026) Temporal order of activations and interactions during arithmetic calculations measured by intracranial electrophysiological recordings in the human brain. Sci Rep 16:5587. doi:10.1038/s41598-026-36122-z; and the data record: Hammer J, Marusic P (2026). Dataset: arithmetic calculations measured by intracranial EEG in the human brain (v4). Zenodo. doi:10.5281/zenodo.19550714",
+  "Funding": [
+    "ERDF-Project Brain Dynamics, No. CZ.02.01.01/00/22_008/0004643",
+    "Grant Agency of Charles University (GA UK), Grant No. 272221"
+  ],
+  "Keywords": [
+    "Brain network dynamics",
+    "Intracranial electroencephalography (iEEG)",
+    "Numerical cognition",
+    "Functional connectivity",
+    "High-gamma band activity (HGB)",
+    "Phase-locking value (PLV)",
+    "SEEG",
+    "arithmetic",
+    "epilepsy"
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000354",
+  "Version": "1.0.0"
 }
