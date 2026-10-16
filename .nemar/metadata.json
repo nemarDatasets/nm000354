@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Kalinova-2026-temporal-10.1038/s41598-026-36122-z",
+  "title": "Arithmetic calculations measured by intracranial EEG in the human brain",
   "description": "Stereo-EEG recordings from 20 patients with pharmacoresistant epilepsy performing a sequential three-operand arithmetic task during presurgical evaluation. The deposit contains preprocessed, bipolar-referenced epochs (-2 to +7 s around the first operand) from 1518 channels and supports analysis of the temporal order of activations and interactions during calculation. It is organized as a BIDS derivative of the authors' Zenodo deposit.",
   "methods_description": "SEEG was recorded with DIXI Medical electrodes and Natus Quantum amplifiers at 2048 Hz. Data were low-pass filtered (Chebyshev Type I, 400 Hz), downsampled to 512 Hz, bipolar referenced, high-pass filtered at 0.1 Hz and notch filtered at 50 Hz and harmonics. Participants solved easy and difficult sequential arithmetic equations presented with PsychToolBox, with stimulus onsets synchronized to the iEEG by parallel-port triggers.",
   "license": "CC-BY-4.0",
@@ -97,5 +97,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "583fbb958d1849e624fae4886f7da53ad07a52bd0e8911e03ea67d88f32295fd"
+  "source_hash": "ebab541195176b701e68d54c722054948d744bd6175f79c45a6b55fa4cb646af"
 }
