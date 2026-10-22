@@ -7,7 +7,7 @@
         "Anti-aliasing low-pass": {
             "Type": "Chebyshev Type I IIR, 8th order, zero phase",
             "Cutoff (Hz)": 400,
-            "Description": "applied before downsampling from 2048 Hz to 512 Hz (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods)"
+            "Description": "applied before downsampling from 2048 Hz to 512 Hz (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods). Measured note, not a documented setting: across the 20 released recordings the 512 Hz spectra fall 3 dB below their 190-200 Hz level at 213-214 Hz and 10 dB at 221-222 Hz (code/receipts/2026-10-22_antialias_spectral_edge.md); 'Cutoff (Hz)' is the publication's 400 Hz"
         },
         "High-pass": {
             "Type": "Butterworth, 6th order, zero phase",

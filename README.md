@@ -68,6 +68,10 @@ as-raw BIDS.
 - `*_channels.tsv`: `low_cutoff` 0.1 Hz = the publication's and data README's high-pass; `high_cutoff` 400 Hz = the
   publication's anti-aliasing low-pass, applied at 2048 Hz before downsampling (the released 512 Hz signal has a Nyquist
   frequency of 256 Hz).
+- Measured spectral edge (from the released data, not a documented filter setting): in all 20 recordings the
+  channel-median power spectrum falls 1 dB below its 190-200 Hz level at 208-210 Hz, 3 dB at 213-214 Hz and 10 dB at
+  221-222 Hz, and is 33.3-34.6 dB down at 240 Hz (method and per-recording table:
+  `code/receipts/2026-10-22_antialias_spectral_edge.md`). The source does not say which processing step sets this edge.
 
 ## Known caveats
 - Everything in the original notes is kept in this README (first paragraphs and the sections below); only the epoch

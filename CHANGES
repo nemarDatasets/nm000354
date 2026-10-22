@@ -1,2 +1,5 @@
+1.0.3 2026-10-21
+  - README and ieeg.json anti-aliasing description: add the spectral edge measured in the released 512 Hz data (-3 dB at 213-214 Hz); high_cutoff keeps the publication's 400 Hz.
+
 1.0.2 2026-10-16
   - Restore the descriptive Name from v1.0.0 after the v1.0.1 naming regression.
