@@ -14,6 +14,43 @@
         "Description": "Integer event ID assigned by the BIDS writer (MNE-BIDS) to each trial_type; equals the trial index."
     },
     "trial_type": {
-        "Description": "Positional trial index 'trial-NNN' = NNN-th trial (third dimension) of the source D.trials array, which is also row NNN of the source D.stimuliValues table (N1, N2, N3, O1, O2, RT, stimType; not exported here). Not stimulus content."
+        "Description": "Positional trial index 'trial-NNN' = NNN-th trial (third dimension) of the source D.trials array, which is also row NNN of the source D.stimuliValues table. The stimulus content of each trial is in the columns N1, N2, N3, O1, O2, RT and stimType (since 30 Oct 2026)."
+    },
+    "N1": {
+        "Description": "First operand of the equation (source D.stimuliValues.N1, verbatim). Added 30 Oct 2026 from the sourcedata MAT tables."
+    },
+    "N2": {
+        "Description": "Second operand (source D.stimuliValues.N2, verbatim)."
+    },
+    "N3": {
+        "Description": "Third operand (source D.stimuliValues.N3, verbatim)."
+    },
+    "O1": {
+        "Description": "First operator (source D.stimuliValues.O1, verbatim).",
+        "Levels": {
+            "+": "plus",
+            "-": "minus"
+        }
+    },
+    "O2": {
+        "Description": "Second operator (source D.stimuliValues.O2, verbatim).",
+        "Levels": {
+            "+": "plus",
+            "-": "minus"
+        }
+    },
+    "RT": {
+        "Description": "Reaction time from the source table D.stimuliValues.RT, verbatim (the data README, trialsData_readme, gives RT in seconds).",
+        "Units": "s"
+    },
+    "stimType": {
+        "Description": "Difficulty and operand format of the trial (source D.stimuliValues.stimType, verbatim): easy or diff(icult), then ARAB (Arabic numbers), DICE (dice symbols), FING (fingers) or WORD (number words). Difficult equations use Arabic numbers only (Kalinova et al. 2026, Methods).",
+        "Levels": {
+            "easy_ARAB": "easy, Arabic numbers",
+            "easy_DICE": "easy, dice symbols",
+            "easy_FING": "easy, fingers",
+            "easy_WORD": "easy, number words",
+            "diff_ARAB": "difficult (result above 10), Arabic numbers"
+        }
     }
 }

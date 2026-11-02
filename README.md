@@ -54,6 +54,14 @@ as-raw BIDS.
   source ROI assignment per channel (`D.channels_ROI`) is not exported.
 - `*_ieeg.json`: acquisition system, filters and reference as stated by the publication and the data README.
 
+Updated in version 1.0.3 by the depositors of this NEMAR copy (the published text above is kept unchanged; these items replace or extend it):
+
+- Source per-trial table D.stimuliValues (N1, N2, N3, O1, O2, RT in s, stimType = easy|diff _ ARAB|DICE|FING|WORD) is described
+  in the data README. Since 30 Oct 2026 its columns are in events.tsv (see below).
+- `*_events.tsv`: one row per epoch; `onset` = epoch start in the file; the first operand N1 appears 2.0 s after `onset` (source
+  `D.time` runs from -2.0 to +7.0 s, 0 s = N1 onset); `trial_type` = trial-NNN in source order; columns `N1`, `N2`, `N3`,
+  `O1`, `O2`, `RT` and `stimType` are the matching row of the source table D.stimuliValues, verbatim.
+
 ## Preprocessing applied by the source
 - Publication (Kalinova et al. 2026, Sci Rep 16:5587, doi:10.1038/s41598-026-36122-z, Methods "iEEG data recording and preprocessing"): contacts in the seizure onset or irritative zones
   rejected; low-pass 8th order Chebyshev Type I IIR (cutoff 400 Hz, zero phase) and downsampling to 512 Hz; broken channels with
@@ -85,6 +93,19 @@ is only a positional index (trial-NNN), not stimulus content, because the source
 table (per-trial equation/difficulty/correctness/response) could not be decoded from the HDF5-backed MAT
 structure with the tools available in this pass and is NOT fabricated here. It remains available in
 sourcedata/raw_data.zip for a future pass with a MATLAB-table-capable reader.
+
+Updated in version 1.0.3 by the depositors of this NEMAR copy (the published text above is kept unchanged; these items replace or extend it):
+
+- `trial_type` carries no stimulus content. Operands, operators, difficulty/format and reaction time of each trial are in
+  the events.tsv columns taken from D.stimuliValues (30 Oct 2026). The table has no proposed-result or correctness column,
+  so those are not available.
+Each subject's trials are concatenated back-to-back along time to form a single BrainVision file so that
+mne-bids can write it; this is an explicit non-physiological concatenation for storage, NOT a claim of a
+continuous recording. events.tsv onsets mark each trial boundary in the concatenated series; trial_type
+is only a positional index (trial-NNN). The source MATLAB table 'stimuliValues' could not be decoded in the first
+conversion. It was decoded on 30 Oct 2026 with mat-io 1.0.0 (MATLAB table/MCOS reader) and its 7 columns were added
+to events.tsv verbatim: one table row per trial, 1925 rows over the 20 subjects, the same count and order as the
+trials (code/fix-20261030_stimuliValues_to_events.py; the MAT files remain in sourcedata/).
 
 Channel/value units: the source does not state physical units for 'trials'; values are treated as
 unconfirmed microvolt-scale for file-writer purposes only. electrodes.tsv uses source channels_MNI
