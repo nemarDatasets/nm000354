@@ -1,6 +1,11 @@
 1.0.3 2026-10-30
 
-  - Add per-trial operands, operators and response times to the events
+  - events.tsv (all 20 subjects): seven columns added from the source table D.stimuliValues, verbatim and in trial
+    order: three operand columns (N1, N2, N3), two operator columns (O1, O2), the response time RT (s) and
+    stimType; described in events.json. Existing columns and rows unchanged.
+  - README: the published text is kept unchanged; paragraphs added after it describe the new columns (the earlier
+    statement that stimuliValues could not be decoded is superseded).
+  - code/fix-20261030_stimuliValues_to_events.py: the conversion script.
 
 1.0.2 2026-10-16
   - Restore the descriptive Name from v1.0.0 after the v1.0.1 naming regression.
